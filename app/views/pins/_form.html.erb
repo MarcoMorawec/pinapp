@@ -1,0 +1,16 @@
+<%= simple_form_for(@pin, html: {class: "form-horizontal"}) do |f| %>
+  <%= f.error_notification %>
+  <%= f.full_error :image_file_size, class: "alert alert-error" %>
+  <%= f.full_error :image_content_type, class: "alert alert-error" %>
+
+  	<%= f.input :image, label: "Upload and image" %>
+  	<%= f.input :image_remote_url, label: "Paste image URL" %>
+    <%= f.input :description, as: :text, input_html: { rows: "3" } %>
+ 
+
+  <div class="pull-right">
+    <%= f.button :submit, class: "btn btn-large btn-primary", value: "Create the Session" %> |
+    <%= link_to 'Show', @pin %> |
+	<%= link_to 'Back', pins_path %>
+  </div>
+<% end %>

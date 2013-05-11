@@ -1,0 +1,18 @@
+	<div class="container">
+		<% if user_signed_in? %>
+			<div class="span5 offset3">
+				<div class="hero-unit frosty">
+					<h2>Let's get you shredding</h2>
+				</div>
+			</div>
+		<% else %>
+			<div class="span5 offset">
+				<div class="hero-unit frosty">
+					<h2>Start Tracking your Surfing</h2>
+						<p>
+							<%= render 'devise/registrations/new' %>
+						</p>
+				</div>
+			</div>
+		<% end %>
+	</div>

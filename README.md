@@ -1,1 +1,2 @@
-<h3>A simple Rails App</h3>
+### Building a First App with Rails
+
