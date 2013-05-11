@@ -1,0 +1,1 @@
+<h3>A simple Rails App</h3>
